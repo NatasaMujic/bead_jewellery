@@ -1,0 +1,219 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background-image: url("index-images/bracelet.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.navbar ul{
+    margin-top: 15px;
+    list-style: none;
+    border-right-style: solid;
+    border-right-color: black;
+    border-right-width: 3px;
+}
+li{
+    display: inline;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+.navbar ul li:hover{
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+
+#main{
+
+    background-color: #f5efea;
+    font-family: 'Advent Pro', sans-serif;
+    padding-bottom: 110px;
+}
+
+.img-s{
+    height: 150px;
+    padding: 4px;
+
+}
+.box1{
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+}
+.box2{
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.box3{
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.box4{
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box{
+  padding: 100px;
+}
+.txt{
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    bottom: 10px;
+    left: 13px;
+    padding: 2px;
+}
+.txt:hover{
+    color: rgb(128, 0, 128);
+}
+#main2{
+    background-color: rgb(255,255,255);
+}
+
+.t{
+    color: rgb(128, 0, 128);
+    font-family: 'Advent Pro', sans-serif;
+}
+
+
+#main3{
+    background-color: rgb(128, 0, 128);
+
+}
+.main3{
+    padding: 30px;
+}
+.quote{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+.quoteAuthor{
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.main4-1{
+    position: relative;
+}
+.main4-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid rgba(255,255,255,0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none; /* Allows events to be passed below this element */
+    z-index: -1; /* Set the lower z-index to be below the content */
+    transition: opacity 0.3s;
+    margin-top: 15px;
+}
+.main4-1:hover::before {
+    opacity: 1;
+}
+.main5{
+    background-color: #f5efea;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.footer{
+    background-color: #c89a52;
+
+}
+.footer{
+    padding: 50px;
+}
+.basic-info{
+    opacity: 1;
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+
+}
+.info{
+    opacity: 1;
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+}
+.cus-service{
+    opacity: 1;
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+}
+.news{
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+}
+#modal{
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    border: 1px solid rgb(128, 0, 128);
+    border-radius: 5px;
+    z-index: 10;
+    display: none;
+}
+
+#login{
+    background-color: rgb(128, 0, 128);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+}
+#login:hover, #reg:hover{
+    background-color: white;
+    color:  rgb(128, 0, 128);
+}
+#reg{
+    background-color: rgb(128, 0, 128);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+}
+#btn-close{
+    background-color: rgb(128, 0, 128);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+}
+#overlay{
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    display: none;
+}
+/* sluzi za onemogucavanje skrolovanja pozadine stranice dok je prikazan pop up meni */
+body.modal-open {
+    overflow: hidden;
+}
